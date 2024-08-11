@@ -27,7 +27,8 @@
 .texto::placeholder{
     color: #0A3871;
 }
-.texto:focus, .texto:active{
+.texto:focus,
+.texto:active{
     border: none;
     outline: none;
 }

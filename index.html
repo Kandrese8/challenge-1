@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptación</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptación</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
             <div class="encriptar">
                 <textarea name="texto" id="texto" class="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
             </div>
@@ -19,16 +19,15 @@
                 <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
                 <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
             </div>
-        
-        <div class="encriptado">
-            <img src="images/Muñeco.png" alt="Muñeco de búsqueda" id="muñeco">
-            <div class="mensaje-encriptado" id="mensaje-encriptado">
-                <h2 id="titulo-mensaje">No existe mensaje</h2>
-                <p id="parrafo">Ingresa el texto que deseas desencriptar</p>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+            <div class="encriptado">
+                <img src="" alt="Muñeco de búsqueda" id="muñeco">
+                <div class="texto-encriptado" id="texto-encriptado">
+                    <h2 id="titulo-mensaje">No hay texto</h2>
+                    <p id="parrafo">Ingresa el texto que deseas desencriptar</p>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+                </div>
             </div>
-        </div>
-    </div> 
-</body>
-<script src="index.js"></script>
+        </div> 
+    </body>
+    <script src="index.js"></script>
 </html>
