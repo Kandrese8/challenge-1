@@ -180,7 +180,8 @@
     }
 
     .condiciones{
-        width: 80%;
+        
+        width: 100%;
         left: 10%;
         top: 67%;
     }
@@ -214,8 +215,10 @@
         top: 5%;
     }
 
-    .encriptado 
-
-    
+    .encriptado{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
 
 }
