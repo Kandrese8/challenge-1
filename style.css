@@ -48,7 +48,7 @@
 }
 
   .condiciones p{
-    font-family: "Inter";
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 200;
     font-size: 12px;
@@ -215,7 +215,7 @@
         top: 5%;
     }
 
-    .encriptado{
+    .encriptado img{
         top: 0;
         display: none;
         visibility: hidden;
