@@ -1,12 +1,12 @@
 # Proyecto de encriptación y desencriptación
 
 ## Descripción
-Este proyecto es una aplicación web que permite encriptar y desencriptar textos simples. Además, ofrece la función de copiar el texto en el área de texto al portapapeles.
+Este proyecto es una aplicación web que permite encriptar y desencriptar textos simples. Además, ofrece la función de copiar el texto en el área de texto.
 
 ## Funcionalidades
 
 ### 1. **Encriptación**
-- **Entrada**: El usuario ingresa un texto en un campo de texto (`textarea`).
+- **Entrada**: El usuario ingresa un texto en un campo de texto.
 - **Proceso**: El texto se encripta reemplazando caracteres específicos con palabras definidas previamente:
   - `e` se reemplaza por `enter`
   - `i` se reemplaza por `imes`
