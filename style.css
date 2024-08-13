@@ -2,7 +2,20 @@
     margin: 0;
     padding: 0;
 }
-
+ 
+.header{
+    border: 1mm solid #0A3871; 
+    background-color: #0A3871; /* Fondo claro */
+    padding: 0.5px; /* Espacio interno para un mejor diseño */
+    text-align: start;    
+ }
+ .logo{
+    border: 1mm solid #F3F5FC; /* Borde de 1mm de grosor, color claro */
+    border-radius: 50px; /* Opcional: esquinas redondeadas */
+    display: block; /* Para evitar el espacio debajo de la imagen */
+    background-color: #F3F5FC;
+   
+ }
 .container{
     position: relative;
     width: 100 vw;
@@ -23,6 +36,7 @@
     font-size: 32px;
     line-height: 150%;
     background-color: #F3F5FC;
+    resize: none;
 }
 
 .texto::placeholder {
@@ -51,10 +65,9 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 200;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 150%;
     color: #495057;
-    opacity: 0.8;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -62,17 +75,17 @@
 
   .botones{
     display: flex;
-    gap: 15px;
+    gap: 10px;
     flex-direction: row;
     align-items: flex-start;
     padding: 1% 0;
     position: absolute;
-    width: 80%;
-    left: 12%;
+    width: 50%;
+    left: 10%;
     top: 82%;
 }
 
-.boton-encriptar{
+.boton-encriptar, .boton-desencriptar{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,7 +101,7 @@
     color: white;
 }
 
-.boton-desencriptar{
+.copiar{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -120,9 +133,9 @@
     justify-content: center;
     position: absolute;
     width: 30%;
-    height: 90%;
+    height: 80%;
     left: 60%;
-    top: 5%;
+    top: 1%;
     background: white;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
