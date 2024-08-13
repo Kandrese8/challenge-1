@@ -42,3 +42,4 @@ Este proyecto es una aplicación web que permite encriptar y desencriptar textos
 ## Créditos
 
 Desarrollado por Kevin Estrada en formación con Alura Latam.
+Apoyado en los recursos del curso y en apoyo de la comunidad de discord ONE G7
