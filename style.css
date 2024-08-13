@@ -3,23 +3,32 @@
     padding: 0;
 }
  
-.header{
-    border: 1mm solid #0A3871; 
-    background-color: #0A3871; /* Fondo claro */
-    padding: 0.5px; /* Espacio interno para un mejor diseño */
+.header{ 
+    background-color: #0A3871;
+    padding: 0.5px;
     text-align: start;    
  }
+ .footer{ 
+    padding: 28%;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 22px;
+    background-color: #0A3871;
+    padding: 0.5px;
+    text-align: start;
+    height: 20%;
+ }
  .logo{
-    border: 1mm solid #F3F5FC; /* Borde de 1mm de grosor, color claro */
-    border-radius: 50px; /* Opcional: esquinas redondeadas */
-    display: block; /* Para evitar el espacio debajo de la imagen */
+    border: 1mm solid #F3F5FC;
+    border-radius: 50px; 
+    display: block; 
     background-color: #F3F5FC;
    
  }
 .container{
     position: relative;
     width: 100 vw;
-    height: 100vh;
+    height: 90vh;
     background: #F3F5FC;
 }
 
@@ -107,8 +116,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    padding: 2%;
-    gap: 8px;
+    padding: 1%;    
     width: 25%;
     background: #D8DFE8;
     border: 1px solid #0A3871;
@@ -135,9 +143,9 @@
     width: 30%;
     height: 80%;
     left: 60%;
-    top: 1%;
+    top: 15%;
     background: white;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8);
     border-radius: 32px;
 
 }

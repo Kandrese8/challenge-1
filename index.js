@@ -1,4 +1,4 @@
-function encriptar() {
+  function encriptar() {
     let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
@@ -46,6 +46,18 @@ function encriptar() {
         muñeco.src = "./images/muñeco.png";
         tituloMensaje.textContent = "Ningún mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
-        swal("Ooops!", "Debes ingresar un texto", "warning");
       }
   }
+  function copiar() {
+    let textoEncriptado = document.getElementById("texto").value;
+
+    if (textoEncriptado.length != 0) {
+        navigator.clipboard.writeText(textoEncriptado).then(function() {
+            alert("Texto copiado al portapapeles");
+        }, function(err) {
+            alert("Error al copiar el texto: ", err);
+        });
+    } else {
+        alert("No hay texto para copiar");
+    }
+}
