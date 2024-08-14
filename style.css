@@ -5,28 +5,38 @@
  
 .header{ 
     background-color: #0A3871;
-    padding: 0.5px;
-    text-align: start;    
- }
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 35px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+ 
+.header h1 {
+    font-family: 'Inter', sans-serif;
+    color: #F3F5FC; 
+    font-size: 28px;
+}
+
+.logo{
+    border: 1mm solid #F3F5FC;
+    border-radius: 50px;  
+    background-color: #F3F5FC; 
+}
  .footer {
+    justify-content: center;
     background-color: #0A3871;
     color: white;
-    text-align: center;
-    padding: 10px 0;
     font-family: 'Inter', sans-serif;
     position: fixed;
     width: 100%; 
     bottom: 0;
-    box-sizing: border-box;
-    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 50px;
 }
-
- .logo{
-    border: 1mm solid #F3F5FC;
-    border-radius: 50px; 
-    display: block; 
-    background-color: #F3F5FC; 
- }
 
 .container{
     position: relative;

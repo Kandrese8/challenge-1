@@ -1,3 +1,10 @@
+document.getElementById("texto").addEventListener("input", function(e) {
+  let valor = e.target.value;
+  // Reemplaza cualquier carácter que no sea minúscula o espacio por una cadena vacía
+  e.target.value = valor.replace(/[^a-z\s]/g, '');
+});
+
+
   function encriptar() {
     let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
