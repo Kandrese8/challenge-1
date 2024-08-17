@@ -1,15 +1,13 @@
+// Reemplaza cualquier carácter que no sea minúscula o espacio por una cadena vacía
 document.getElementById("texto").addEventListener("input", function(e) {
   let valor = e.target.value;
-  // Reemplaza cualquier carácter que no sea minúscula o espacio por una cadena vacía
   e.target.value = valor.replace(/[^a-z\s]/g, '');
 });
-
 
   function encriptar() {
     let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
-    let muñeco = document.getElementById("muñeco");
   
     let textoCifrado = texto
       .replace(/e/gi, "enter")
@@ -22,12 +20,9 @@ document.getElementById("texto").addEventListener("input", function(e) {
       document.getElementById("texto").value = textoCifrado;
       tituloMensaje.textContent = "Texto encriptado con éxito";
       parrafo.textContent = "";
-      muñeco.src = "./images/muñeco.png";
     } else {
-      muñeco.src = "./images/muñeco.png";
       tituloMensaje.textContent = "Ningún mensaje fue encontrado";
       parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
-      swal("Ooops!", "Debes ingresar un texto", "warning");
     }
   }
   
@@ -35,7 +30,6 @@ document.getElementById("texto").addEventListener("input", function(e) {
     let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
-    let muñeco = document.getElementById("muñeco");
   
     let textoCifrado = texto
       .replace(/enter/gi, "e")
@@ -48,9 +42,7 @@ document.getElementById("texto").addEventListener("input", function(e) {
         document.getElementById("texto").value = textoCifrado;
         tituloMensaje.textContent = "Texto desencriptado con éxito";
         parrafo.textContent = "";
-        muñeco.src = "./images/muñeco.png";
       } else {
-        muñeco.src = "./images/muñeco.png";
         tituloMensaje.textContent = "Ningún mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
       }
