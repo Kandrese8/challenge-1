@@ -100,7 +100,7 @@
     top: 75%;
 }
 
-.boton-encriptar, .boton-desencriptar{
+.boton-encriptar{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,8 +116,8 @@
     color: white;
 }
 
-.copiar{
-    padding: 1%;    
+.boton-desencriptar{
+    padding: 2%;    
     width: 25%;
     background: #D8DFE8;
     border: 1px solid #0A3871;
@@ -129,8 +129,20 @@
     text-align: center;
     color:#0A3871 ;
 }
-.copiar:hover{
-    background-color: #F3F5FC;
+.copiar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0A3871;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: white;
 }
 
 .boton-desencriptar:hover,
@@ -138,6 +150,11 @@
     margin: 0.5%;
     width: 24%;
     padding: 1.8%;
+}
+.copiar:hover {
+    background-color: #0056b3;
+    color: white; /* Cambia el color del texto si es necesario */
+    cursor: pointer;
 }
 
 .encriptado{

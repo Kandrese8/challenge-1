@@ -8,6 +8,7 @@ document.getElementById("texto").addEventListener("input", function(e) {
     let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
+    let resultado = document.getElementById("texto-encriptado");
   
     let textoCifrado = texto
       .replace(/e/gi, "enter")
@@ -17,12 +18,14 @@ document.getElementById("texto").addEventListener("input", function(e) {
       .replace(/u/gi, "ufat");
   
     if (texto.length != 0) {
-      document.getElementById("texto").value = textoCifrado;
+      resultado.textContent = textoCifrado;
+      //document.getElementById("texto").value = textoCifrado;
       tituloMensaje.textContent = "Texto encriptado con éxito";
       parrafo.textContent = "";
     } else {
       tituloMensaje.textContent = "Ningún mensaje fue encontrado";
       parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
+      resultado.textContent = "";
     }
   }
   
@@ -30,6 +33,7 @@ document.getElementById("texto").addEventListener("input", function(e) {
     let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
+    let resultado = document.getElementById("texto-encriptado");
   
     let textoCifrado = texto
       .replace(/enter/gi, "e")
@@ -39,20 +43,22 @@ document.getElementById("texto").addEventListener("input", function(e) {
       .replace(/ufat/gi, "u");
     
       if (texto.length != 0) {
-        document.getElementById("texto").value = textoCifrado;
+        resultado.textContent = textoCifrado;
+        //document.getElementById("texto").value = textoCifrado;
         tituloMensaje.textContent = "Texto desencriptado con éxito";
         parrafo.textContent = "";
       } else {
         tituloMensaje.textContent = "Ningún mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
+        resultado.textContent = "";
       }
   }
   function copiar() {
-    let textoEncriptado = document.getElementById("texto").value;
+    let resultado = document.getElementById("texto-encriptado").innerText;
 
-    if (textoEncriptado.length != 0) {
-        navigator.clipboard.writeText(textoEncriptado).then(function() {
-            alert("Texto copiado al portapapeles");
+    if (resultado.length != 0) {
+        navigator.clipboard.writeText(resultado).then(function() {
+            //alert("Texto copiado al portapapeles");
         }, function(err) {
             alert("Error al copiar el texto: ", err);
         });
