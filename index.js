@@ -3,6 +3,13 @@ document.getElementById("texto").addEventListener("input", function(e) {
   let valor = e.target.value;
   e.target.value = valor.replace(/[^a-z\s]/g, '');
 });
+document.getElementById("texto").addEventListener("focus", function() {
+  this.scrollIntoView(); // Esto asegura que el textarea esté completamente visible
+});
+document.getElementById("texto").addEventListener("pointerdown", function(event) {
+  this.setPointerCapture(event.pointerId); // Captura el puntero para evitar interferencias
+});
+
 
   function encriptar() {
     let texto = document.getElementById("texto").value;
